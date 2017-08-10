@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="gridpane" cache="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="false" prefHeight="633.0" prefWidth="995.0" style="" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crapsgui.FXMLDocumentController">
+  <children>
+    <Label style="-fx-text-fill: red; -fx-font-weight: bold; -fx-font-size: 30;" text="Do you want to play a game?" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+      <effect>
+        <Reflection bottomOpacity="0.14" fraction="0.6" topOpacity="0.58" />
+      </effect>
+      <font>
+        <Font size="30.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" text="Student ID:" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+      <effect>
+        <MotionBlur angle="121.4" radius="3.41" />
+      </effect>
+      <textFill>
+        <RadialGradient centerX="0.34444444444444444" centerY="0.4523809523809524" radius="0.5">
+          <stops>
+            <Stop />
+            <Stop color="#eeecec" offset="1.0" />
+          </stops>
+        </RadialGradient>
+      </textFill>
+    </Label>
+    <TextField fx:id="student_id" prefHeight="23.0" prefWidth="233.0" style="-fx-background-color: White;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <GridPane.margin>
+        <Insets left="50.0" right="50.0" />
+      </GridPane.margin>
+    </TextField>
+    <Button fx:id="playbutton" mnemonicParsing="false" onMousePressed="#rollingdice" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #DFB951; -fx-text-fill: #006464; -fx-border-radius: 20; -fx-background-radius: 20; -fx-padding: 5;" text="Let's play!" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+    <Button fx:id="closebutton" mnemonicParsing="false" onMousePressed="#press" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #DFB951; -fx-text-fill: #006464; -fx-border-radius: 20; -fx-background-radius: 20; -fx-padding: 5;" text="I don't want to play!" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+      <GridPane.margin>
+        <Insets right="5.0" />
+      </GridPane.margin>
+    </Button>
+    <Label fx:id="craps" style="-fx-text-fill: Red; -fx-font-size: 36; -fx-font-weight: bold;" text="Craps" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+      <effect>
+        <DropShadow blurType="GAUSSIAN" color="#cc3333" height="17.787333984375" offsetX="10.0" offsetY="10.0" radius="8.39433349609375" width="17.79" />
+      </effect>
+    </Label>
+    <Label fx:id="labelshow" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+    <Button fx:id="statbtn" mnemonicParsing="false" onMousePressed="#showstat" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #DFB951; -fx-text-fill: #006464; -fx-border-radius: 20; -fx-background-radius: 20; -fx-padding: 5;" text="Show Stat" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+    <Button id="playbutton" fx:id="rules" mnemonicParsing="false" onMousePressed="#rule" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #DFB951; -fx-text-fill: #006464; -fx-border-radius: 20; -fx-background-radius: 20; -fx-padding: 5;" text="Rules" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Label fx:id="labelresult" prefHeight="25.0" prefWidth="335.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="287.0" minWidth="10.0" prefWidth="214.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="10.0" prefWidth="317.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="10.0" prefWidth="317.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>

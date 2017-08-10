@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CrapsGUI.jnlp">
+  <information>
+    <title>CrapsGUI</title>
+    <vendor>chi woon</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="CrapsGUI.jar" size="264147" download="eager" />
+    <jar href="lib\FXyz-Core-1.0.jar" size="422863" download="eager" />
+    <jar href="lib\ojdbc7.jar" size="3698857" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="CrapsGUI" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="crapsgui.Assignment"  name="CrapsGUI" />
+  <update check="always"/>
+</jnlp>
