@@ -1,5 +1,5 @@
 # MSIM3203---craps_GUI
-A project for MSIM3203
+A project for MSIM3203 build with Java(FX)
 Function of this project:
   1. Craps game
   2. Animation of craps game(the rolling dice)
